@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {% for oeuvre in oeuvres  %}
+        <h1> {{oeuvre.nom}} </h1>
+        <img src="{{oeuvre.image}}" alt="">
+        <br><br>
+        <p> {{oeuvre.description}} </p>
+    {% endfor %}
+{% endblock %}
